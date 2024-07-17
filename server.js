@@ -887,9 +887,9 @@ setInterval(function () {
     appSocket.clients.forEach(function each(ws) {
         ws.send('ping')
     });
-    try {
-        axios.get(address).then(r => "")
-    } catch (e) {
-    }
+    //try {
+        //axios.get(address).then(r => "")
+    //} catch (e) {
+    //}
 }, 5000)
 appServer.listen(process.env.PORT || 8999);
